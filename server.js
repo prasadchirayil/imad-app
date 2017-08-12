@@ -18,10 +18,6 @@ app.get('/article-two', function (req, res) {
    res.send('article one will be served');
 });
 
-app.get('/article-three', function (req, res) {
-   res.send('article cannot be served');
-});
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
